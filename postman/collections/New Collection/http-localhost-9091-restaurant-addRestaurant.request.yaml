@@ -1,0 +1,27 @@
+$kind: http-request
+name: http://localhost:9091/restaurant/addRestaurant
+description: |-
+  Generated from cURL: curl -X POST 'http://localhost:9091/restaurant/addRestaurant' \
+    -H 'Content-Type: application/json' \
+    -d '{
+      "id": 0,
+      "name": "Spice Kitchen",
+      "address": "12 MG Road",
+      "city": "Bengaluru",
+      "restaurantDescription": "North Indian and Chinese"
+    }'
+url: http://localhost:9091/restaurant/addRestaurant
+method: POST
+headers:
+  Content-Type: application/json
+body:
+  type: json
+  content: |-
+    {
+        "id": 0,
+        "name": "Spice Kitchen",
+        "address": "12 MG Road",
+        "city": "Bengaluru",
+        "restaurantDescription": "North Indian and Chinese"
+      }
+order: 842577832958630

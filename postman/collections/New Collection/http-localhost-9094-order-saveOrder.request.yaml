@@ -1,0 +1,43 @@
+$kind: http-request
+name: http://localhost:9094/order/saveOrder
+description: ""
+url: http://localhost:9094/order/saveOrder
+method: POST
+body:
+  type: json
+  content: |-
+    {
+        "order": 1,
+        "foodItemList": [
+            {
+                "id": 1,
+                "itemName": "Dal Fry",
+                "itemDescription": "lentils with spices",
+                "price": 350,
+                "restaurantId": 1,
+                "quamtity": 0,
+                "veg": true
+            }
+        ],
+        "restaurant": {
+            "id": 1,
+            "name": "rest 1",
+            "address": "add line 1",
+            "city": "Pune",
+            "restaurantDescription": "rest desc"
+        },
+        "userDTO": {
+            "userId": 1,
+            "userName": "code",
+            "userPassword": "pass123",
+            "address": "add line 1",
+            "city": "Bengaluru"
+        }
+    }
+settings:
+  protocolVersion: auto
+  strictSSL: false
+  followRedirects: true
+  disableCookies: false
+  maxResponseSize: 52428800
+order: 4448199807524201

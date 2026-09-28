@@ -1,0 +1,5 @@
+$kind: http-request
+name: Fetch Restaurant By ID
+url: http://localhost:9091/restaurant/fetchById/1
+method: GET
+order: 2000000000000

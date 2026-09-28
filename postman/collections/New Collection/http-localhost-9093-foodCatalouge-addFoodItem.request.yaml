@@ -1,0 +1,27 @@
+$kind: http-request
+name: http://localhost:9093/foodCatalouge/addFoodItem
+description: |-
+  Generated from cURL: curl -X POST 'http://localhost:9093/foodCatalouge/addFoodItem' \
+    -H 'Content-Type: application/json' \
+    -d '{
+      "item": "Paneer Tikka",
+      "itemDescription": "Grilled cottage cheese with spices",
+      "veg": true,
+      "price": 249,
+      "resturantId": 1,
+      "quantity": 10
+    }'
+url: http://localhost:9092/user/addUser
+method: POST
+headers:
+  Content-Type: application/json
+body:
+  type: json
+  content: |-
+    {
+        "userName": "Aditi",
+        "userPassword": "Aditi1234567",
+        "address": "gomti nagar",
+        "city": "Lucknow"
+    }
+order: 2061906277158800

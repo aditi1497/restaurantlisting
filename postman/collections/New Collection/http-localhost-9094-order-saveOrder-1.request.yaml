@@ -1,0 +1,43 @@
+$kind: http-request
+name: http://localhost:9094/order/saveOrder
+description: ""
+url: http://localhost:9094/order/saveOrder
+method: POST
+body:
+  type: json
+  content: |-
+    {
+        "order": 1,
+        "foodItemList": [
+            {
+                "id": 1,
+               "item": "Paneer Tikka",
+        "itemDescription": "Grilled cottage cheese with spices",
+        "isVeg": true,
+        "price": 249,
+        "resturantId": 1,
+        "quantity": 10
+            }
+        ],
+        "restaurant": {
+            "id": 1,
+             "name": "Spice Kitchen",
+        "address": "12 MG Road",
+        "city": "Bengaluru",
+        "restaurantDescription": "North Indian and Chinese"
+        },
+        "userDTO": {
+            "userId": 1,
+             "userName": "Aditi",
+        "userPassword": "Aditi1234567",
+        "address": "gomti nagar",
+        "city": "Lucknow"
+        }
+    }
+settings:
+  protocolVersion: auto
+  strictSSL: false
+  followRedirects: true
+  disableCookies: false
+  maxResponseSize: 52428800
+order: 4456743328347499

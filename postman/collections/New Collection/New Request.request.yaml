@@ -1,0 +1,13 @@
+$kind: http-request
+url: http://localhost:9091/restaurant/addRestaurant
+method: POST
+body:
+  type: json
+  content: |-
+    {
+        "name": "Spice Kitchen",
+        "address": "12 MG Road",
+        "city": "Bengaluru",
+        "restaurantDescription": "North Indian and Chinese"
+      }
+order: 1790609472604
